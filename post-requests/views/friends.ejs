@@ -1,0 +1,18 @@
+<h1>Friends list</h1>
+
+<style media="screen">
+  html {
+    background-color: #222;
+    color: white;
+  }
+</style>
+
+<% friends.forEach(function(friend) { %>
+  <li><%= friend %></li>
+<% }) %>
+
+<form class="" action="/addfriend" method="POST">
+  <input type="text" name="newfriend" placeholder="name">
+  <button>I made a new friend!</button>
+</form>
+
