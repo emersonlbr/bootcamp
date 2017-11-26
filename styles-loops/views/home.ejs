@@ -1,0 +1,14 @@
+
+<% include partials/header %>
+
+    <h1>Hello World! </h1>
+    <p>Be welcome to my webpage <%= emerson.toUpperCase() %> </p>
+
+    <% if(emerson.toLowerCase() === "lopes") { %>
+
+      <p>Good choice! Lopes is the best!</p>
+      <%= console.log(emerson); %>
+
+    <% } %>
+
+<% include partials/footer %>

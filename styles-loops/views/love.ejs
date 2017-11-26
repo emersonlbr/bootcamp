@@ -1,0 +1,17 @@
+
+<% include partials/header %>
+
+  <%# whats's inside will be read as if it where javascript %>
+  <h1>You felt in love with <%= thing.toUpperCase() %> </h1>
+
+
+  <% if(thing === "food") { %>
+    <p>you are a foodie!</p>
+  <% } else { %>
+    <h3> you should like food more! </h3>
+  <% } %>
+
+
+  <p>P. S. this is the love.ejs file</p>
+
+<% include partials/footer %>
