@@ -5,7 +5,7 @@ var app = express();
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.set("view engine", "ejs");
+app.set("view engine", "ejs");  
 
 
 var friends = ["Daniel", "Bruno", "Matheus", "Jorge", "Marcos"];
