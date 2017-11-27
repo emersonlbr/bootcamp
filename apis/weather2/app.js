@@ -49,7 +49,6 @@ app.get("/weather", function(req, res) {
 
 
 
-
 app.get('*', function(req, res) {
   res.send("Seems like you're lost!");
 });
