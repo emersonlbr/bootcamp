@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+  <div class="ui main text container segment" id="main">
+    <div class="ui huge header"><%= blog.title %></div>
+    <div class="ui top attached">
+      <div class="item">
+        <img class="ui centered rounded image" src="<%= blog.image%> "/>
+      </div>
+      <div id="cont "class="content">
+        <%# a dash here istead of an equal sign will take all that is in the txt and run as if it were code %>
+        <span> <%- blog.created.toDateString() %> </span>
+      </div>
+      <div id="dsc" class="description">
+        <p> <%= blog.body %> </p>
+      </div>
+      <a class="ui orange button" href="/blogs/<%= blog._id%>/edit">Edit</a>
+      <form id="delete" class="" action="/blogs/<%= blog._id%>?_method=DELETE" method="POST">
+        <button class="ui red basic button" type="submit" >Delete</button>
+      </form>
+    </div>
+
+
+  </div>
+
+<% include partials/footer %>
