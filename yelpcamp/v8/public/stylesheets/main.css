@@ -1,0 +1,15 @@
+.thumbnail img{
+  width: 100%!important;
+}
+
+.thumbnail {
+  padding: 0!important;
+}
+
+.thumbnail .caption-full {
+  padding: 9px!important;
+}
+
+#username {
+  text-transform:capitalize;
+}
